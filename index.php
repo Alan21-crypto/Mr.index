@@ -142,6 +142,7 @@ if (!$resultado) {
 				<label>Opinión</label><br><br>
 				<textarea type="textarea" name="opinion"></textarea><br><br>
 				<button type="submit" name="enviar">Enviar Consulta</button>
+				</div>
 			</form>
 		</section>
 	</main>
