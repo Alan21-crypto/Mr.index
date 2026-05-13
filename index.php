@@ -148,7 +148,7 @@ if (!$resultado) {
         <h4>Dirección: Coatepec, Veracruz. Carretera Antigua Xalapa-Coatepec KM8.5, Consolapa.</h4>
         <h4>telefono de contacto: 220 535 7585</h4>
         <h4>Desarrollado por: <strong>Alan Dasaeth Morales Salas</strong> | Parcial 2 | 2026</h4>
-        <h4>Redes Sociales: whatsapp:2281196948 / INSTAGRAM</h4>
+        <h4>Redes Sociales:<br>Whatsapp: 228 1275017<br> Instagram: nn_.1994</h4>
 	</footer>
 </body>
 </html>
