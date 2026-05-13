@@ -27,6 +27,12 @@ nav a:hover{
     color: coral;
 }
 
+table{
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
 section{
     background-color: #330A1F;
     padding: 20px;
