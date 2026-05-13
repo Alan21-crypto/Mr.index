@@ -10,18 +10,16 @@ if (!$user) {
     die("Error: Railway no está enviando las variables de entorno al código.");
 }
 
-$con = mysqli_connect($host, $user, $pass, $db, $port);
+$conexion = mysqli_connect($host, $user, $pass, $db, $port);
 
-if (!$con) {
+if (!$conexion) {
     die("Error de conexión: " . mysqli_connect_error());
 }
 ?>
 
 <?php
-// 1. Conexión a la base de datos
-include("coneccion.php"); 
 
-// 2. Consulta para obtener los programas de la tabla
+// 1. Consulta para obtener los programas de la tabla
 $query = "SELECT * FROM tabla";
 $resultado = mysqli_query($conexion, $query); 
 
