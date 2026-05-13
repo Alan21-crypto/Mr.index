@@ -105,7 +105,7 @@ if (!$resultado) {
             <h2>Catálogo General de Programas</h2>
             <p>Información recuperada en tiempo real de la base de datos institucional:</p>
             
-            <table>
+            <table border="1">
                 <thead>
                     <tr>
                         <th>ID</th>
