@@ -134,9 +134,11 @@ if (!$resultado) {
 		</section>
 
 		<section id="opinion">
+			
 			<h2>Opinión</h2>
 			<h3>Tu opinión es bastante importante para nosotros, así que si gustas, puedes dejar aquí lo que pienses:</h3>
 			<form method="POST">
+				<div class="inputbox">
 				<label>Opinión</label><br><br>
 				<textarea type="textarea" name="opinion"></textarea><br><br>
 				<button type="submit" name="enviar">Enviar Consulta</button>
