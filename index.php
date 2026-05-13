@@ -144,11 +144,11 @@ if (!$resultado) {
 	</main>
 
 	<footer>
-		<p><strong>CBTis 165 "Leona Vicario"</strong></p>
-        <p>Dirección: Coatepec, Veracruz. Carretera Antigua Xalapa-Coatepec KM8.5, Consolapa.</p>
-        <p>telefono de contacto:2288162055</p>
-        <p>Desarrollado por: <strong>Fabián emir pineda hernandez</strong> | Parcial 2 | 2026</p>
-        <p>Redes Sociales: whatsapp:2281196948 / IG - pinedaa_hz</p>
+		<h2><strong>CBTis 165 "Leona Vicario"</strong></h2>
+        <h4>Dirección: Coatepec, Veracruz. Carretera Antigua Xalapa-Coatepec KM8.5, Consolapa.</h4>
+        <h4>telefono de contacto: 220 535 7585</h4>
+        <h4>Desarrollado por: <strong>Alan Dasaeth Morales Salas</strong> | Parcial 2 | 2026</h4>
+        <h4>Redes Sociales: whatsapp:2281196948 / INSTAGRAM</h4>
 	</footer>
 </body>
 </html>
