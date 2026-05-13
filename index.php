@@ -48,11 +48,11 @@ if (!$resultado) {
 		<hr><br>
 
 		<nav>
+			<a href="#tabla">|TABLA|</a>
 			<a href="#academica">|APOYO ACADÉMICO|</a>
 			<a href="#biensalud">|BIENESTAR Y SALUD|</a>
 			<a href="#desint">|DESARROLLO INTEGRAL|</a>
 			<a href="#emptal">|EMPRENDIMIENTO Y TALENTO|</a>
-			<a href="#tabla">|TABLA|</a>
 			<a href="#opinion">|OPINIÓN|</a>
 			<br><br>
 		</nav>
@@ -61,6 +61,38 @@ if (!$resultado) {
 	<hr><br>
 
 	<main>
+
+		<section id="tabla">
+            <h2>Catálogo General de Programas</h2>
+            <p>Información recuperada en tiempo real de la base de datos institucional:</p>
+            
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Programa</th>
+                        <th>Descripción</th>
+                        <th>Área de Impacto</th>
+                        <th>Requisitos de Participación</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php
+                    // Punto 3: Ciclo while para generar las filas dinámicamente
+                    while ($row = mysqli_fetch_array($resultado)) {
+                        echo "<tr>";
+                        echo "<td>" . $row['id'] . "</td>";
+                        echo "<td><strong>" . $row['nombre'] . "</strong></td>";
+                        echo "<td>" . $row['descripcion'] . "</td>";
+                        echo "<td>" . $row['area_impacto'] . "</td>";
+                        echo "<td>" . $row['requisitos'] . "</td>";
+                        echo "</tr>";
+                    }
+                    ?>
+                </tbody>
+            </table>
+        </section>
+		
 		<section id="academica">
 			<h2>Información Académica</h2>
 			<h3>SINaTA</h3> <img src="SINATA.jpg" alt="Don Sinaton" width="250">
@@ -100,37 +132,6 @@ if (!$resultado) {
 			<h4>Complementar la formación académica desarrollando habilidades socioemocionales, recreativas y cognitivas, además de fomentar la convivencia escolar y prevenir situaciones de riesgo.</h4>
 			<h4>Los espacios extracurriculares dentro de las escuelas donde los estudiantes participan en actividades son: Deportivos, Culturales y Ciencias</h4>
 		</section>
-
-		<section id="tabla">
-            <h2>Catálogo General de Programas</h2>
-            <p>Información recuperada en tiempo real de la base de datos institucional:</p>
-            
-            <table border="1">
-                <thead>
-                    <tr>
-                        <th>ID</th>
-                        <th>Programa</th>
-                        <th>Descripción</th>
-                        <th>Área de Impacto</th>
-                        <th>Requisitos de Participación</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <?php
-                    // Punto 3: Ciclo while para generar las filas dinámicamente
-                    while ($row = mysqli_fetch_array($resultado)) {
-                        echo "<tr>";
-                        echo "<td>" . $row['id'] . "</td>";
-                        echo "<td><strong>" . $row['nombre'] . "</strong></td>";
-                        echo "<td>" . $row['descripcion'] . "</td>";
-                        echo "<td>" . $row['area_impacto'] . "</td>";
-                        echo "<td>" . $row['requisitos'] . "</td>";
-                        echo "</tr>";
-                    }
-                    ?>
-                </tbody>
-            </table>
-        </section>
 
 		<section id="opinion">
 			<h2>Opinión</h2>
